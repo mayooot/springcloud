@@ -13,13 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
  * @createTime 2022年01月15日 21:32:00
  */
 @RestController
+@RefreshScope
 public class ConfigClientController {
 
     @Value("${config.info}")
     private String configInfo;
 
     @GetMapping("/configInfo")
-    public String getConfigInfo() {
+    public String getConfigInfo(){
         return configInfo;
     }
 }

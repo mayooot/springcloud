@@ -7,13 +7,13 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/mayooot/springcloud.git
+          uri: https://gitee.com/RichardLi123/springcloud-config.git
           # 搜索目录
           search-paths:
-            - springcloud
+            - springcloud-config
           skip-ssl-validation: true
         # 读取分支
-      label: main
+      label: master
 eureka:
   client:
     # 表示是否将自己注册进EurekaServer，默认为true
